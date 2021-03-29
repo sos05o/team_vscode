@@ -1,5 +1,4 @@
 from flask import Flask, render_template, redirect, session, request, url_for
-# import numpy as np
 
 
 app = Flask(__name__)
@@ -28,8 +27,6 @@ def calculation():
 
     result.append(2*n*pi)
     result.append(n**2*pi)
-
-    print(result)
 
     return render_template("result_b.html", result=result)
 
